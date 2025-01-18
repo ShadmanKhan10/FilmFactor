@@ -25,10 +25,11 @@ export default function Home() {
   const getMoviesFromGenres = async (genreID) => {
     console.log("Genre ID and page", genreID, page);
     setLoading(true);
-    const response = await axios.get(
-      `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&sort_by=popularity.desc&with_genres=${genreID}&page=${page}`
-    );
+
     try {
+      const response = await axios.get(
+        `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&sort_by=popularity.desc&with_genres=${genreID}&page=${page}`
+      );
       console.log(response.data);
       setSearching(false);
       setSearchQuery("");
@@ -37,7 +38,7 @@ export default function Home() {
       setLoading(false);
     } catch (error) {
       console.log("Error getting movies", error);
-      setLoading(fasle);
+      setLoading(false);
     }
   };
 

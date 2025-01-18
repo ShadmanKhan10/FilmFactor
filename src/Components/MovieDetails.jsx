@@ -31,7 +31,7 @@ export default function MovieDetails({
   const handlePopUpDisplay = () => {
     setShowMovieDetailsPopUp((prev) => !prev);
   };
-  console.log("BAckfrp imagei is ", backdropImg);
+  console.log("Backdrop image is ", backdropImg);
 
   const processLike = () => {
     setLikeClicked((prev) => !prev);
@@ -65,35 +65,39 @@ export default function MovieDetails({
               alt="backdrop"
               className="popUp_backdrop"
             />
-            <img
-              src={`https://image.tmdb.org/t/p/original${poster}`}
-              alt="backdrop"
-              className="popUp_poster"
-            />
-            <label className="perticular-movie-title">
-              {movieName} [{releaseDate}] [{runtime}]
-            </label>
-
-            <div className="social-icons-container">
+            <div className="poster-social-container">
+              {" "}
               <img
-                src={!likeClicked ? like : liked}
-                onClick={processLike}
-                alt="like"
-                className="social-icon"
+                src={`https://image.tmdb.org/t/p/original${poster}`}
+                alt="backdrop"
+                className="popUp_poster"
               />
-              <img
-                src={comment}
-                onClick={enableCommentInput}
-                alt="comment"
-                className="social-icon"
-              />
-              <img
-                onClick={enableMovieSaving}
-                src={!isMovieSaved ? save : saved}
-                alt="share"
-                className="social-icon"
-              />
+              <div className="social-icons-container">
+                <img
+                  src={!likeClicked ? like : liked}
+                  onClick={processLike}
+                  alt="like"
+                  className="social-icon"
+                />
+                <img
+                  src={comment}
+                  onClick={enableCommentInput}
+                  alt="comment"
+                  className="social-icon"
+                />
+                <img
+                  onClick={enableMovieSaving}
+                  src={!isMovieSaved ? save : saved}
+                  alt="share"
+                  className="social-icon"
+                />
+              </div>
             </div>
+
+            {/* <label className="perticular-movie-title">
+              {movieName} [{releaseDate}] [{runtime}]
+            </label> */}
+
             <div className="perticular-movie-description">
               <label>{movieDescription}</label>
             </div>
@@ -111,6 +115,9 @@ export default function MovieDetails({
               </div>
             )}
             <div className="movie-details-container">
+              <label className="perticular-movie-title">
+                {movieName} [{releaseDate}] [{runtime}]
+              </label>
               <div className="cast-container">
                 {castDetails.map(
                   (cast, index) =>
@@ -151,6 +158,7 @@ export default function MovieDetails({
                 </div>
               </div>
               <Comments />
+              <p>...</p>
             </div>
             <div className="genres-container">
               <span className="genre-heading">Genres:</span>
