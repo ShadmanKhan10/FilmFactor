@@ -602,6 +602,12 @@
 }
 
 @media only screen and (orientation: portrait) {
+  .movie-details-pop-up-container {
+    top: 2.5rem;
+  }
+  .perticular-movie-description {
+    left: 190px;
+  }
   .signup-container {
     width: 97vw;
   }
@@ -657,5 +663,10 @@
     transform: translateX(-50%);
     z-index: 10;
     /* box-shadow: 1px 1px 5px 1px lightblue; */
+  }
+  .close-btn-container {
+    /* border: 2px solid red; */
+    width: 6vw;
+    height: 6vw;
   }
 }
