@@ -1,14 +1,14 @@
-# Astuto Assignment
+# FilmFactor
 
-The app Finds you movies based on your selection of genre.
+The app finds you movies based on your selection of genre.
 
 ## Preview
 
 Here are some preview images of the project:
 
-![Astuto Image 1](src/assets/filmFactor1.png)
-![Astuto Image 2](src/assets/filmFactor2.png)
-![Astuto Image 3](src/assets/filmFactor3.png)
+![FilmFactor 1](src/assets/filmFactor1.png)
+![FilmFactor 2](src/assets/filmFactor2.png)
+![FilmFactor 3](src/assets/filmFactor3.png)
 
 ## Getting Started
 
