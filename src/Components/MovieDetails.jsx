@@ -61,7 +61,11 @@ export default function MovieDetails({
               <img src={closeImg} alt="close" className="close-icon" />
             </div>
             <img
-              src={`https://image.tmdb.org/t/p/original${backdropImg}`}
+              src={
+                backdropImg
+                  ? `https://image.tmdb.org/t/p/original${backdropImg}`
+                  : "https://i.pinimg.com/736x/62/cb/b8/62cbb8138fd6c38a72198e09859a5426.jpg"
+              }
               alt="backdrop"
               className="popUp_backdrop"
             />

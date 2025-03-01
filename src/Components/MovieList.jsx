@@ -68,7 +68,7 @@ export default function MovieList({
     getGenres(perticularMovie.id);
     getCast(perticularMovie.id);
     console.log(perticularMovie);
-    setBackdropImg(perticularMovie.backdrop_path || backdrop);
+    setBackdropImg(perticularMovie.backdrop_path);
     setPoster(perticularMovie.poster_path);
     setMovieName(perticularMovie.title);
     setMovieDescription(perticularMovie.overview);

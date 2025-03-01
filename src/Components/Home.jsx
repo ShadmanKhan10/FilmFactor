@@ -5,6 +5,7 @@ import next from "../assets/next.png";
 import SearchBar from "./SearchBar.jsx";
 import MovieList from "./MovieList.jsx";
 import loader from "../assets/loader.svg";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
   const [movieDetails, setMovieDetails] = useState([]);
