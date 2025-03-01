@@ -17,7 +17,7 @@ Follow the steps below to clone, install dependencies, and run the project local
 ### Clone the Repository
 
 ```sh
-git clone https://github.com/ShadmanKhan10/astuto-assignment.git
+git clone https://github.com/ShadmanKhan10/FilmFactor
 npm install
 npm run dev
 ```
